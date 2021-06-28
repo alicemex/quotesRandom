@@ -59,3 +59,65 @@ body{
     border: 0px;
     cursor:pointer;
   }
+
+  @media (max-width: 600px) {
+    @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Jomhuria', cursive;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color:blueviolet;
+
+}
+#container{
+ display:flex;
+ align-items: center;
+ height: 100vh;
+ justify-content: center;
+}
+
+#Quotebox{
+  width:80%;
+  min-height: 70vh; 
+  background-color: rgb(218, 190, 245);
+  border-radius: 10px;
+  padding: 3rem 2rem 1rem 2rem;  
+}
+
+#quoteSpace{
+  font-size: 2.5rem;
+  line-height: 2rem;
+  min-height: 40vh;
+}
+
+#autor{
+  margin: 1rem auto 2rem auto;
+  font-size: 2rem;
+  display:flex;
+  justify-content: flex-end;
+}
+
+#buttons img{
+  width: 2rem;
+  }
+
+  #buttons{
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+
+  button{
+    padding: 0.5rem 1.5rem;
+    background-color:blueviolet;
+    color:white;
+    font-size: x-large;
+    border: 0px;
+    cursor:pointer;
+  }
+  }
