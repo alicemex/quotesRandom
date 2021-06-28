@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Jomhuria', cursive;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color:blueviolet;
+
+}
+#container{
+ display:flex;
+ align-items: center;
+ height: 100vh;
+ justify-content: center;
+}
+
+#Quotebox{
+  width:40%;
+  min-height: 60vh; 
+  background-color: rgb(218, 190, 245);
+  border-radius: 10px;
+  padding: 3rem 2rem 1rem 2rem;  
+}
+
+#quoteSpace{
+  font-size: 4rem;
+  line-height: 2.8rem;
+  min-height: 40vh;
+}
+
+#autor{
+  margin: 1rem auto 2rem auto;
+  font-size: 3rem;
+  line-height: 2.8rem;
+  display:flex;
+  justify-content: flex-end;
+}
+
+#buttons img{
+  width: 2rem;
+  }
+
+  #buttons{
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+
+  justify-content: space-between;
+  }
+
+  button{
+    padding: 1rem 2.5rem;
+    background-color:blueviolet;
+    color:white;
+    font-size: x-large;
+    border: 0px;
+    cursor:pointer;
+  }
