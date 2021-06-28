@@ -22,9 +22,17 @@ const Quotebox = (props) => {
                 setAutor(randomQuote.author);
             })
     }
+    const randomColor = () => {
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        document.body.style.backgroundColor = "#" + randomColor;
+        let boton = document.getElementById("newquote");
+        boton.style.backgroundColor = "#" + randomColor;
+    }
 
     const handleClick = () => {
         getQuote();
+        randomColor();
+
 
     }
     return (<div id="Quotebox" >
@@ -37,7 +45,7 @@ const Quotebox = (props) => {
                     <span><img src={twitterIcon} alt="twitter"></img></span>
                 </a>
             </div>
-            <button onClick={handleClick} id="new-quote">New Quote</button>
+            <button onClick={handleClick} id="newquote">New Quote</button>
         </div>
     </div>
     )
