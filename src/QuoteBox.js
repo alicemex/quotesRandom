@@ -17,7 +17,6 @@ const Quotebox = (props) => {
             .then(data => {
                 let dataQuotes = data.quotes;
                 let randomNum = Math.floor(Math.random() * dataQuotes.length);
-                console.log(randomNum);
                 let randomQuote = data.quotes[randomNum];
                 setQuote(randomQuote.quote);
                 setAutor(randomQuote.author);
@@ -34,7 +33,7 @@ const Quotebox = (props) => {
         <div id="autor"> <p>{author} </p></div>
         <div id="buttons">
             <div className="social-media">
-                <a href="#" id="tweet-quote">
+                <a href="http://www.twitter.com" id="tweet-quote">
                     <span><img src={twitterIcon} alt="twitter"></img></span>
                 </a>
             </div>
